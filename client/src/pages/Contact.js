@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
-import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
+
 const Contact = () => {
   return (
     <Layout title={"Contact us"}>
@@ -20,10 +21,10 @@ const Contact = () => {
             vaialible
           </p>
           <p className="mt-3">
-            <BiMailSend /> : gagandeepsingh220903@gmail.com
+            <FaEnvelope /> : gagandeepsingh220903@gmail.com
           </p>
           <p className="mt-3">
-            <BiPhoneCall /> : 9463567280
+            <FaPhone /> : 9463567280
           </p>
         
         </div>
