@@ -31,11 +31,10 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "./client/build")));
 
-// Routes
+// API Routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
-
 
 // Serve client build
 app.use("*", (req, res) => {
